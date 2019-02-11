@@ -1,0 +1,292 @@
+@font-face {
+  font-family: FreeSans;
+  src: url(fonts/FreeSans.ttf);
+}
+
+body{
+margin: 0 auto;
+padding: 0;
+font-family: FreeSans;
+color: #444444;
+}
+
+a{
+text-decoration: none;
+}
+a:visited{
+color: white;
+}
+a:link{
+color: white;
+}
+a:active{
+color: white;
+}
+
+.fixed-banner{
+font-size: 17px; 
+width: 100%;
+padding: 20px 0;
+text-align: center;
+background-color: #f1f1f1;
+color: #A5A5A5; 
+}
+.fixed-banner a{
+font-size: 17px;
+color: #ccc;
+transition: 0.5s ease-in-out;
+}
+.fixed-banner a:hover{
+color: #161616;
+transition: 0.5s;
+}
+
+.banner{
+padding: 60px;
+height: 600px;
+text-align: center;
+font-size: 30px;
+color: #ccc;
+background-color: #F8F8F8;
+}
+.banner p{
+font-size: 15px;
+}
+.banner a{
+color: #A1A1A1;
+transition: 0.5s ease-in-out;
+}
+.banner a:hover{
+color: #444444;
+transition: 0.5s;
+}
+
+button{
+width: 33.3333%;
+background-color: #f9f9f9;
+border: #D4D4D4 solid 3px;
+border-radius: 3px;
+color: #A5A5A5;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+transition: 0.4s ease-in-out;
+}
+button:hover{
+background-color: #f1f1f1;
+color: #A9A9A9;
+transition: 0.5s;
+}
+
+table{
+width: 100%;
+border-spacing: 0 0;
+}
+
+h1{
+font-size: 45px;
+}
+h2{
+font-size: 35px;
+}
+h3{
+font-size: 19px;
+}
+h4{
+font-size: 20px;
+}
+h4 i{
+color: #717171;
+}
+h5{
+font-size: 13px;
+}
+h5 i{
+color: #D20092;
+}
+
+.title2 h3{
+text-align: center;
+transition: 0.4s ease-in-out;
+}
+.title2 h3:hover{
+color: #A5A5A5;
+transition: 0.4s;
+}
+
+.about{
+transition: 0.4s;
+color: #545454;
+text-align: center;
+font-size: 30px;
+padding: 86px;
+left: 0;
+bottom: 0;
+background-color: #EBEBEB;
+}
+.about p{
+font-size: 20px; 
+}
+.about blockquote{
+text-align: justify;
+font-size: 15px;
+}
+
+.down{
+transition: 0.4s;
+color: #545454;
+text-align: center;
+font-size: 30px;
+padding: 86px;
+height: 500px;
+left: 0;
+bottom: 0;
+background-color: #F3F3F3;
+}
+.down h1{
+text-align: center;
+}
+.down h5{
+text-align: justify;
+}
+.down td{
+width: 33.3333%;
+}
+.down p{
+font-size: 20px;
+}
+.down img{
+width: 200px;
+height: 200px;
+border-radius: 300px;
+border: 7px solid #F3F3F3;
+filter:grayscale(80%);
+transition: 0.2s ease-in-out;
+}
+.down img:hover{
+transition: 0.3s;
+width: 230px;
+height: 230px;
+filter:grayscale(50%);
+border: 7px solid #ccc;
+}
+
+.blockquote {
+background: #F3F3F3;
+border-left: 10px solid #ccc;
+margin: 1.5em 10px;
+padding: 0.5em 10px;
+quotes: "\201C""\201D""\2018""\2019";
+}
+.blockquote:before {
+color: #161616;
+content: open-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+}
+.blockquote p {
+  display: inline;
+}
+
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  background-clip: padding-box;
+  text-align: right;
+}
+.overlay {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 200px;
+  color: white;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup img{
+width: 300px;
+height: 300px;
+}
+.popup .h2{
+font-weight: bold;
+font-size: 30px;
+}
+
+.popup h3{
+font-size: 10px;
+}
+
+.popup a{
+transition: 0.4s ease-in-out;
+}
+
+.popup a:hover {
+color: #ccc;
+transition: 0.6s;
+ }
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+iframe{
+border: #f1f1f1 solid 10px;
+background-color: black;
+}
+
+.box1{
+width: 70%;
+height: 100px;
+border-spacing: 30px;
+}
+
+.box1 td h1{
+text-align: center;
+font-size: 30px;
+color: #9E9E9E;
+}
+
+.box1 td h2{
+text-align: center;
+font-size: 18px;
+color: #A5A5A5;
+}
+
+.box1 td{
+background-color: #f1f1f1;
+transition: 0.4s ease-in-out;
+}
+
+.box1 td:hover{
+background-color: #f9f9f9;
+transition: 0.4s;
+}
