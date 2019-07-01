@@ -3,9 +3,19 @@
   src: url(fonts/FreeSans.ttf);
 }
 
+@font-face {
+  font-family: Playfair Display;
+  src: url(fonts/playfair-display/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: Asimov;
+  src: url(fonts/asimov/Asimov.otf);
+}
+
 body{
 margin: 0 auto;
-padding: 0;
+#padding: 30px;
 font-family: FreeSans;
 color: #444444;
 }
@@ -124,14 +134,15 @@ font-size: 30px;
 padding: 86px;
 left: 0;
 bottom: 0;
-background-color: #EBEBEB;
+#background-color: #EBEBEB;
+background-color: #F9F9F9;
 }
 .about p{
 font-size: 20px; 
 }
 .about blockquote{
 text-align: justify;
-font-size: 15px;
+font-size: 13px;
 }
 
 .down{
@@ -283,10 +294,67 @@ color: #A5A5A5;
 
 .box1 td{
 background-color: #f1f1f1;
-transition: 0.4s ease-in-out;
+transition: 0.5s ease-in-out;
 }
 
 .box1 td:hover{
 background-color: #f9f9f9;
-transition: 0.4s;
+transition: 0.5s;
 }
+
+.experience{
+background-position: center;
+background-repeat: no-repeat;
+background-image: url("portfolio/final.png");
+background-size: 460px;
+height: 500px;
+transition: 0.5s ease-in-out;
+}
+
+.experience:hover{
+filter: grayscale(100%);
+transition: 0.5s;
+}
+
+.experience2{
+filter: grayscale(100%);
+#filter: brightness(70%);
+#border: solid #E1E1E1 5px;
+background-position: center;
+background-repeat: no-repeat;
+background-image: url("portfolio/final8.png");
+background-size: 340px;
+height: 500px;
+transition: 0.5s ease-in-out;
+}
+
+.experience2:hover{
+filter: none;
+transition: 0.5s;
+}
+
+.title{
+font-family: "Playfair Display";
+font-size: 30px;
+}
+
+#.title:hover{
+#color: gray;
+#}
+
+.h1{
+font-size: 20px;
+font-family: Asimov;
+color: #A5A5A5;
+}
+
+.h2{
+font-size: 15px;
+}
+
+
+hr{ 
+border: 0; 
+height: 0; 
+border-top: 1px solid rgba(0, 0, 0, 0.1); 
+border-bottom: 1px solid rgba(255, 255, 255, 0.3); }

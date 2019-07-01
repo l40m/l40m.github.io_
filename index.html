@@ -6,107 +6,68 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="icon/icon.png">
 		<script type="text/javascript" src="code.js"></script>
+
+
+<script>
+var timeout;
+function changeText() {
+  var elem = document.getElementById("accion");
+
+  var date = new Date();
+  var horas = date.getHours();
+  var minutos = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+
+  elem.innerHTML = horas + ":" + minutos + " Almuerzo";
+
+  clearTimeout(timeout);
+  timeout = setTimeout(function() {
+    elem.innerHTML = "";
+  }, 3000);
+}
+</script>
+
+
+	
 	</head>
 	<body>		
 		<div class="fixed-banner">
 			I do not use proprietary social media because that's gay shit
-			<br><a href="https://mastodonte.social/@l40m" target="_blank">mastodon</a> | <a href="https://telegram.me/fuckl40m" target="_blank">telegram</a> | <a href="mailto:l40m@protonmail.com" target="_blank">protonmail</a>
+			<br><a href="https://telegram.me/fuckl40m" target="_blank">telegram</a> | <a href="mailto:l40m@protonmail.com" target="_blank">protonmail</a>
 		</div>	
 		<div class="banner">			
 			<p>I'M SAD AS HELL, DON'T ASK.</p>
-			<a href="#popup1">Why should you add me at your team?</a>
-	
-		
+			<a href="#popup1"><div class="title">Why should you add me at your team?</div></a>
 					<table class="box1" align="center">
 						<tr>
 							<td rowspan="2" width="50%">
 								<blockquote>
-									<h1>Work even in Jewish holidays?</h1>
-									<h2>I'll work anytime, anywhere.</h2>
+									<div class="h1">Work even in Jewish holidays?</div>
+									<div class="h2">I'll work anytime, anywhere.</div>
 								</blockquote>
 							</td>
 							<td width="25%">
 								<blockquote>
-									<h1>Experience?</h1>
-									<h2>I used to have a business. Not anymore.</h2>					
+									<div class="h1">Experience?</div>
+									<div class="h2">I used to have a business. Not anymore.</div>					
 								</blockquote>
 							</td>
 							<td width="25%">
 								<blockquote>
-									<h1>Record?</h1>
-									<h2>Clean. It's real clean. As my conscience. </h2>						
+									<div class="h1">Record?</div>
+									<div class="h2">Clean. It's real clean. As my conscience. </div>
 								</blockquote>
 							</td>
 						</tr>
 						<tr>
 							<td colspan="2">
 								<blockquote>
-									<h1>Education?</h1>
-									<h2>Some. Here and there.</h2>														
+									<div class="h1">Education?</div>
+									<div class="h2">Some. Here and there.</div>
 								</blockquote>
 							</td>
 						</tr>			
 					</table>
-				</div>	
-		<div style="overflow-x: auto;">		
-			<table class="down">
-				<tr>
-					<td colspan="3">
-						How am I?
-						<p>In work</p>
-					</td>
-				</tr>														
-				<tr class="title2">
-					<td><h3>Self-learning</h3></td>
-					<td><h3>Pro-active</h3></td>		
-					<td><h3>Pression handle</h3></td>				
-				</tr>	
-				<tr>
-					<td>
-						<center>
-							<img src="icon/me.jpg">
-						</center>						
-					</td>
-					<td>
-						<center>
-							<img src="icon/the_proyect.png">
-						</center>						
-					</td>			
-					<td colspan="3">
-						<center>
-							<img src="icon/pressure.jpeg">
-						</center>						
-					</td>								
-				</tr>						
-				<tr>
-					<td>				
-						<h5>
-							<div class="blockquote">
-								I was (and still) really poor, my computer was a horrible shit, so I needed to understand how computers
-								works to make of mine a little something more faster (because I can't were allow to spent money in a expert).
-							</div>
-						</h5>
-					</td>
-					<td>					
-						<h5>
-							<div class="blockquote">
-								When I start a proyect, I need myself turn into it. There's no more Luis but The Proyect.
-								I gotta sniff the proyect! I gotta lick the proyect! I gotta wash the proyect, I gotta date the proyect, 
-								I gotta BE THE PROYECT!							
-							</div>
-						</h5>
-					</td>				
-					<td>					
-						<h5>
-							<div class="blockquote">
-								I hate people and the people, strangely, hate me, so, as Diogenes of Sinope, who used to claim alms to a statue, 
-								I got train to failure. I love pressure in a romantic way. I love it, hate it, is a toxic relationship and I'm 
-								pretty happy in there. 
-							</div>
-						</h5>
-					</td>				
-				</tr>			
-			</table>			
+				</div>		
 		</div>	
 		<div id="popup1" class="overlay">
 			<div class="popup">
@@ -115,34 +76,60 @@
 				<p><a href="#">[exit]</a></p>
 			</div>
 		</div>		
-			<table class="about">
-				<tr>
-					<td>
-						What's my style?
-						<p>Simple, fast and nice</p>
+				<table class="about" style="background-color: #F5F5F5;">
+					<tr>
+						<td rowspan="2" width="40%" class="experience"></td>
+						<td colspan="2"> 
+							<div class="title">What's my style?</div>
+							<p><div class="h2"><b>Simple, fast and nice</b></div>	
+						<hr width="40%">				
 						<blockquote>
 							I really hate how the dominant technology companies are moving. Making the devices defective by design. The purpose 
 							of development is to make the process simple (but no simpler) and more efficient, not more complex and weighty, fucking cunts!
-							Ya all folks know, the KISS principle.
+							Ya all folks know, the <b><i><a target="_blank" href="https://en.wikipedia.org/wiki/KISS_principle" style="color:#545454;">KISS</a></i></b> principle.
 							I try to use less javascript and CSS as I can to make the expierence user-app the most easier possible. And prevent
 							the excesive use of CPU/RAM.
 						</blockquote>
-					</td>
-				</tr>
+						</td>
+					<tr>
+					</tr>																				
+				</table>	
+			<table class="about">	
 				<tr>
-				</tr>																				
-			</table>
-			<table class="about" style="background-color: #F5F5F5;">	
-				<tr>
-					<td>
-						Laboral experience
-						<p>Poor and freelancer</p>
+					<td>						
+						<div class="title">Laboral experience</div>
+						<p><div class="h2"><b>Poor and freelancer</b></div>
+						<hr width="40%">
 						<blockquote>
 							I used to work on-demand. Designing for a low-scale advertising company, fixing computers, replacing Windows with some GNU/Linux distro or "editing" Android
 							configuration using FOSS software.
 						</blockquote>
+						<td rowspan="2" width="40%" class="experience2"></td>						
 					</td>
 				</tr>																				
-			</table>				
-	</body>
+			</table>
+			<div class="fixed-banner">M E A T I S M U R D E R</div>		
+
+ <!--
+					<tr height="5">
+						<td>
+						<blockquote>
+							I really hate how the dominant technology companies are moving. Making the devices defective by design. The purpose 
+							of development is to make the process simple (but no simpler) and more efficient, not more complex and weighty, fucking cunts!
+							Ya all folks know, the <b><i><a href="https://en.wikipedia.org/wiki/KISS_principle" style="color:#545454;">KISS</a></i></b> principle.
+							I try to use less javascript and CSS as I can to make the expierence user-app the most easier possible. And prevent
+							the excesive use of CPU/RAM.
+						</blockquote>
+						</td>
+					<td>
+						<blockquote>
+							I really hate how the dominant technology companies are moving. Making the devices defective by design. The purpose 
+							of development is to make the process simple (but no simpler) and more efficient, not more complex and weighty, fucking cunts!
+							Ya all folks know, the <b><i><a href="https://en.wikipedia.org/wiki/KISS_principle" style="color:#545454;">KISS</a></i></b> principle.
+							I try to use less javascript and CSS as I can to make the expierence user-app the most easier possible. And prevent
+							the excesive use of CPU/RAM.
+						</blockquote>
+					</td>					
+					</tr>
+-->					
 </html>
